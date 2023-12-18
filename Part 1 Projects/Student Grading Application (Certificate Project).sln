@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33403.182
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Student Grading Application (Certificate Project)", "Student Grading Application (Certificate Project)\Student Grading Application (Certificate Project).csproj", "{4D2CC4A7-E946-4474-B287-0768E9D480B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Student GPA Calculator ( Console App)", "Student GPA Calculator ( Console App)\Student GPA Calculator ( Console App).csproj", "{DBB03329-9040-4B7C-AFCA-41756DC7A75B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4D2CC4A7-E946-4474-B287-0768E9D480B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D2CC4A7-E946-4474-B287-0768E9D480B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D2CC4A7-E946-4474-B287-0768E9D480B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D2CC4A7-E946-4474-B287-0768E9D480B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBB03329-9040-4B7C-AFCA-41756DC7A75B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBB03329-9040-4B7C-AFCA-41756DC7A75B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBB03329-9040-4B7C-AFCA-41756DC7A75B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBB03329-9040-4B7C-AFCA-41756DC7A75B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {135C7918-A28C-4362-B714-74F1EE471CB6}
+	EndGlobalSection
+EndGlobal
