@@ -376,37 +376,80 @@ else ipAddress is invalid
 //    }
 //}
 
-string[,] corporate =
+//string[,] corporate =
+//{
+//    {"Robert", "Bavin"}, {"Simon", "Bright"},
+//    {"Kim", "Sinclair"}, {"Aashrita", "Kamath"},
+//    {"Sarah", "Delucchi"}, {"Sinan", "Ali"}
+//};
+
+//string[,] external =
+//{
+//    {"Vinnie", "Ashton"}, {"Cody", "Dysart"},
+//    {"Shay", "Lawrence"}, {"Daren", "Valdes"}
+//};
+
+//string externalDomain = "hayworth.com";
+
+//for (int i = 0; i < corporate.GetLength(0); i++)
+//{
+//    string firstName= corporate[i,0];
+//    string firstTwoLetters = firstName.Length > 2 ? firstName.Substring(0, 2) : firstName;
+//    string secondName= corporate[i, 1];
+//    string lastTwoLetters= secondName.Length > 5 ? secondName.Substring(1,5) : secondName;
+//    firstTwoLetters = firstTwoLetters.ToLower();
+//    lastTwoLetters = lastTwoLetters.ToLower();
+//    Console.WriteLine($"{firstTwoLetters}{lastTwoLetters} ");
+
+//}
+
+//for (int i = 0; i < external.GetLength(0); i++)
+//{
+//    string firstName = external[i, 0];
+//    string lastName = external[i, 1];
+//    string email = $"{firstName.ToLower()}.{lastName.ToLower()}@{externalDomain}";
+//    Console.WriteLine(email);
+//}
+
+
+
+//void Update();
+
+//int[] GetEnemyCoordinates(string enemyId);
+//int[] GetDistanceFromHero(string enemyId);
+//int[] GetHeroCoordinates();
+
+//bool EnemyCanHitHero(string enemyId);
+//int GetEnemyDamageOutput(string enemyId);
+//void UpdateHeroHP(int damage);
+
+
+double total = 0;
+double minimumSpend = 30.00;
+
+double[] items = { 15.97, 3.50, 12.25, 22.99, 10.98 };
+double[] discounts = { 0.30, 0.00, 0.10, 0.20, 0.50 };
+
+for (int i = 0; i < items.Length; i++)
 {
-    {"Robert", "Bavin"}, {"Simon", "Bright"},
-    {"Kim", "Sinclair"}, {"Aashrita", "Kamath"},
-    {"Sarah", "Delucchi"}, {"Sinan", "Ali"}
-};
-
-string[,] external =
-{
-    {"Vinnie", "Ashton"}, {"Cody", "Dysart"},
-    {"Shay", "Lawrence"}, {"Daren", "Valdes"}
-};
-
-string externalDomain = "hayworth.com";
-
-for (int i = 0; i < corporate.GetLength(0); i++)
-{
-    string firstName= corporate[i,0];
-    string firstTwoLetters = firstName.Length > 2 ? firstName.Substring(0, 2) : firstName;
-    string secondName= corporate[i, 1];
-    string lastTwoLetters= secondName.Length > 5 ? secondName.Substring(1,5) : secondName;
-    firstTwoLetters = firstTwoLetters.ToLower();
-    lastTwoLetters = lastTwoLetters.ToLower();
-    Console.WriteLine($"{firstTwoLetters}{lastTwoLetters} ");
-
+    total += GetDiscountedPrice(i);
 }
 
-for (int i = 0; i < external.GetLength(0); i++)
+total -= TotalMeetsMinimum() ? 5.00 : 0.00;
+
+Console.WriteLine($"Total: ${FormatDecimal(total)}");
+
+double GetDiscountedPrice(int itemIndex)
 {
-    string firstName = external[i, 0];
-    string lastName = external[i, 1];
-    string email = $"{firstName.ToLower()}.{lastName.ToLower()}@{externalDomain}";
-    Console.WriteLine(email);
+    return items[itemIndex] * (1 - discounts[itemIndex]);
+}
+
+bool TotalMeetsMinimum()
+{
+    return total >= minimumSpend;
+}
+
+string FormatDecimal(double input)
+{
+    return input.ToString().Substring(0, 5);
 }
