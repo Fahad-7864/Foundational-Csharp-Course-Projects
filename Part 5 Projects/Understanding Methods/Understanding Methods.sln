@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33403.182
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Understanding Methods", "Understanding Methods\Understanding Methods.csproj", "{BC20997A-0F64-4496-A924-BC96CBDDA1BB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Understanding Methods", "Understanding Methods\Understanding Methods.csproj", "{BC20997A-0F64-4496-A924-BC96CBDDA1BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuidedProject", "GuidedProject\GuidedProject.csproj", "{0ECB2ADF-E619-4462-8A43-86BA692E2EF5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{BC20997A-0F64-4496-A924-BC96CBDDA1BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BC20997A-0F64-4496-A924-BC96CBDDA1BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BC20997A-0F64-4496-A924-BC96CBDDA1BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0ECB2ADF-E619-4462-8A43-86BA692E2EF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0ECB2ADF-E619-4462-8A43-86BA692E2EF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0ECB2ADF-E619-4462-8A43-86BA692E2EF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0ECB2ADF-E619-4462-8A43-86BA692E2EF5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
